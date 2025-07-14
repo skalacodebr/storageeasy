@@ -1,0 +1,120 @@
+.pace {
+    display: none !important;
+}
+
+.main-content {
+    margin-left: 0 !important;
+    overflow: hidden;
+}
+
+body[data-sidebar-size=sm] {
+    min-height: 0;
+}
+
+body {
+    background: #ffffff;
+    height: 100% !important;
+}
+
+html,
+body {
+  height: 100%; /* Faz com que o html e o body ocupem toda a altura disponível */
+  margin: 0; /* Remove a margem padrão */
+}
+
+.container {
+  min-height: 100%; /* Faz com que o container ocupe no mínimo toda a altura */
+  display: flex;
+  flex-direction: column; /* Faz com que os filhos do container sejam dispostos em coluna */
+  justify-content: center; /* Centraliza verticalmente */
+}
+
+.card-bg {
+    background-color: #284b63;
+    color: #fff;
+}
+
+.content-foto h2{
+    color: #fff;
+    font-size: 30px;
+}
+
+.content-foto p{
+    color: #fff;
+    font-size: 19px;
+}
+
+.card {
+    box-shadow: 0 0.25rem 0.75rem #12263f3b;
+}
+
+.btn-tabs {
+    position: relative;
+    display: flex;
+    margin: 1rem auto;
+    padding: 3px 5px;
+    border-radius: 2rem;
+    background-color: #284b630d;
+    gap: 2px;
+    align-items: center;
+}
+
+.btn-tabs span {
+    width: 200px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #284b63;
+    padding: 11px 12px;
+    border-radius: 2rem;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn-tabs span:hover {
+    background: #8386f612;
+    width: 200px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #284b63;
+    padding: 11px 12px;
+    border-radius: 2rem;
+    display: block;
+    text-align: center;
+}
+
+.btn-tab {
+    font-size: 17px;
+    font-weight: bold;
+    color: #284b63;
+    padding: 11px 12px;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+    z-index: 1; /* Garante que o texto fique acima do indicador */
+}
+
+.active-indicator {
+    position: absolute;
+    height: 100%;
+    border-radius: 2rem;
+    background-color: #284b63;
+    transition: all 0.3s ease; /* Transição suave para a movimentação do indicador */
+    z-index: 0; 
+}
+
+.active {
+    color: #fff !important;
+}
+
+.btn-primary {
+    background-color: #284b63;
+    color: #fff;
+    border: none;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    
+}
