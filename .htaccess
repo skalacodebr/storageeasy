@@ -1,1 +1,10 @@
- 
+ <IfModule mod_rewrite.c>
+    # Ativa o motor de reescrita de URLs
+    RewriteEngine On
+
+    # Se a requisição NÃO começar com /public/
+    RewriteCond %{REQUEST_URI} !^/public/
+
+    # Então redireciona tudo para public/ mantendo o restante da URI
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
