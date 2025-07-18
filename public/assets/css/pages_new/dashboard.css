@@ -1,0 +1,1154 @@
+/* Dashboard Styles */
+/* Cards Principais */
+.metric-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    height: 100%;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0,0,0,.08);
+}
+
+.metric-title {
+    color: #6c757d;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.metric-value {
+    font-size: 32px;
+    font-weight: 600;
+    color: #2b2b2b;
+    margin-bottom: 15px;
+}
+
+.metric-progress {
+    height: 4px;
+    background: #e9ecef;
+    border-radius: 2px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.metric-progress-bar {
+    height: 100%;
+    border-radius: 2px;
+}
+
+.metric-progress-bar.blue {
+    background: #556ee6;
+}
+
+.metric-progress-bar.green {
+    background: #34c38f;
+}
+
+.metric-progress-bar.orange {
+    background: #f1b44c;
+}
+
+.metric-progress-bar.purple {
+    background: #694680;
+}
+
+.metric-change {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.metric-change.positive {
+    color: #34c38f;
+}
+
+.metric-change.negative {
+    color: #f46a6a;
+}
+
+.metric-change-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.metric-change-icon.positive {
+    background: rgba(52, 195, 143, 0.1);
+    color: #34c38f;
+}
+
+.metric-change-icon.negative {
+    background: rgba(244, 106, 106, 0.1);
+    color: #f46a6a;
+}
+
+.metric-period {
+    color: #6c757d;
+    font-size: 13px;
+    margin-left: auto;
+}
+
+.avatar-sm {
+    height: 3rem;
+    width: 3rem;
+}
+
+.avatar-xs {
+    height: 2rem;
+    width: 2rem;
+}
+
+.avatar-title {
+    align-items: center;
+    display: flex;
+    font-weight: 500;
+    height: 100%;
+    justify-content: center;
+    width: 100%;
+}
+
+.bg-soft-primary {
+    background-color: rgba(85, 110, 230, 0.1) !important;
+}
+
+.bg-soft-success {
+    background-color: rgba(52, 195, 143, 0.1) !important;
+}
+
+.bg-soft-warning {
+    background-color: rgba(241, 180, 76, 0.1) !important;
+}
+
+.bg-soft-danger {
+    background-color: rgba(244, 106, 106, 0.1) !important;
+}
+
+.bg-soft-purple {
+    background-color: rgba(105, 70, 128, 0.1) !important;
+}
+
+.text-purple {
+    color: #694680 !important;
+}
+
+.font-size-24 {
+    font-size: 24px !important;
+}
+
+.card {
+    margin-bottom: 24px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.08);
+    border-radius: 8px;
+    border: none;
+}
+
+/* Leads Cards */
+.leads-card {
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.leads-card.success {
+    background-color: rgba(52, 195, 143, 0.1);
+}
+
+.leads-card.danger {
+    background-color: rgba(244, 106, 106, 0.1);
+}
+
+.leads-number {
+    font-size: 32px;
+    font-weight: 600;
+    color: #2b2b2b;
+    margin: 10px 0;
+}
+
+.leads-label {
+    color: #6c757d;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.leads-icon {
+    font-size: 20px;
+}
+
+.leads-icon.up {
+    color: #34c38f;
+}
+
+.leads-icon.down {
+    color: #f46a6a;
+}
+
+/* Taxa de Conversão */
+.conversion-rate {
+    text-align: center;
+}
+
+.conversion-rate h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.conversion-rate p {
+    color: #6c757d;
+    margin-bottom: 0;
+}
+
+/* Performance Bar */
+.performance-container {
+    margin-top: 30px;
+}
+
+.performance-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.performance-text {
+    color: #2b2b2b;
+    font-weight: 500;
+}
+
+.performance-status {
+    padding: 4px 12px;
+    border-radius: 4px;
+    background-color: rgba(52, 195, 143, 0.1);
+    color: #34c38f;
+    font-weight: 500;
+}
+
+.performance-bar {
+    height: 6px;
+    background-color: #e9ecef;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.performance-progress {
+    height: 100%;
+    background-color: #34c38f;
+    border-radius: 3px;
+    width: 85%;
+    transition: width 1s ease-in-out;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+    .col-xl-3 {
+        margin-bottom: 20px;
+    }
+}
+
+/* Chart customizations */
+.inadimplencia-chart {
+    margin: 20px 0;
+}
+
+.conversion-chart {
+    margin: 0 auto;
+    max-width: 200px;
+}
+
+/* Alert customizations */
+.alert-warning {
+    background-color: rgba(241, 180, 76, 0.1);
+    border-color: rgba(241, 180, 76, 0.2);
+    color: #f1b44c;
+}
+
+/* Button customizations */
+.btn-light {
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+
+.btn-primary {
+    background-color: #556ee6;
+    border-color: #556ee6;
+}
+
+/* Card header customizations */
+.card-title {
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Progress bar animation */
+.progress-bar {
+    transition: width .6s ease;
+    animation: progressAnimation 1s ease-in-out;
+}
+
+@keyframes progressAnimation {
+    from {
+        width: 0;
+    }
+}
+
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Inadimplência Styles */
+.delinquency-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.delinquency-item {
+    padding: 15px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.delinquency-item:last-child {
+    border-bottom: none;
+}
+
+.delinquency-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.delinquency-category {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    color: #2b2b2b;
+}
+
+.delinquency-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.delinquency-dot.blue {
+    background-color: #556ee6;
+}
+
+.delinquency-dot.pink {
+    background-color: #e83e8c;
+}
+
+.delinquency-dot.purple {
+    background-color: #6f42c1;
+}
+
+.delinquency-percentage {
+    font-weight: 600;
+    color: #2b2b2b;
+}
+
+.delinquency-subtitle {
+    color: #6c757d;
+    font-size: 13px;
+    margin-left: 18px;
+}
+
+.delinquency-progress {
+    height: 6px;
+    background-color: #f0f0f0;
+    border-radius: 3px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.table-responsive {
+    overflow-x: inherit;
+    -webkit-overflow-scrolling: touch;
+}
+
+.delinquency-progress-bar {
+    height: 100%;
+    border-radius: 3px;
+}
+
+.delinquency-progress-bar.blue {
+    background-color: #556ee6;
+}
+
+.delinquency-progress-bar.pink {
+    background-color: #e83e8c;
+}
+
+.delinquency-progress-bar.purple {
+    background-color: #6f42c1;
+}
+
+.delinquency-alert {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: rgba(241, 180, 76, 0.1);
+    border: 1px solid rgba(241, 180, 76, 0.2);
+}
+
+.delinquency-alert-content {
+    display: flex;
+    align-items: center;
+}
+
+.delinquency-alert-icon {
+    color: #f1b44c;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.delinquency-alert-text {
+    color: #2b2b2b;
+}
+
+.delinquency-alert-text strong {
+    display: block;
+    margin-bottom: 2px;
+}
+
+.delinquency-alert-text p {
+    margin: 0;
+    color: #6c757d;
+    font-size: 13px;
+}
+
+/* Origem dos Leads */
+.leads-origin {
+    margin-top: 30px;
+}
+
+.leads-origin-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.leads-origin-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.leads-origin-icon {
+    width: 32px;
+    height: 32px;
+    background: #556ee6;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.leads-origin-text {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2b2b2b;
+}
+
+.leads-origin-total {
+    color: #556ee6;
+    font-size: 14px;
+}
+
+.leads-origin-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.leads-origin-card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,.05);
+}
+
+.leads-origin-number {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.leads-origin-number.blue {
+    background: #556ee6;
+}
+
+.leads-origin-number.light-blue {
+    background: #50a5f1;
+}
+
+.leads-origin-number.pink {
+    background: #e83e8c;
+}
+
+.leads-origin-number.green {
+    background: #34c38f;
+}
+
+.leads-origin-number.purple {
+    background: #6f42c1;
+}
+
+.leads-origin-source {
+    font-size: 15px;
+    font-weight: 500;
+    color: #2b2b2b;
+    margin-bottom: 15px;
+}
+
+.leads-origin-conversion {
+    font-size: 13px;
+    color: #6c757d;
+    margin-bottom: 8px;
+}
+
+.leads-origin-progress {
+    height: 4px;
+    background: #f0f0f0;
+    border-radius: 2px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.leads-origin-progress-bar {
+    height: 100%;
+    border-radius: 2px;
+}
+
+.leads-origin-progress-bar.blue {
+    background: #556ee6;
+}
+
+.leads-origin-progress-bar.light-blue {
+    background: #50a5f1;
+}
+
+.leads-origin-progress-bar.pink {
+    background: #e83e8c;
+}
+
+.leads-origin-progress-bar.green {
+    background: #34c38f;
+}
+
+.leads-origin-progress-bar.purple {
+    background: #6f42c1;
+}
+
+.leads-origin-rate {
+    font-size: 13px;
+    color: #34c38f;
+    font-weight: 500;
+}
+
+.leads-origin-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-top: 1px solid #f0f0f0;
+}
+
+.leads-origin-average {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.leads-origin-average-icon {
+    width: 24px;
+    height: 24px;
+    background: #556ee6;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+}
+
+.leads-origin-average-text {
+    font-size: 14px;
+    color: #2b2b2b;
+}
+
+.leads-origin-average-value {
+    font-weight: 600;
+}
+
+.leads-origin-report {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #556ee6;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.leads-origin-report:hover {
+    text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .leads-origin-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .leads-origin-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .leads-origin-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Faturamento vs Custo */
+.revenue-cost {
+    padding: 20px;
+}
+
+.revenue-cost-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.revenue-cost-icon {
+    width: 32px;
+    height: 32px;
+    background: rgba(52, 195, 143, 0.1);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #34c38f;
+}
+
+.revenue-cost-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2b2b2b;
+}
+
+.revenue-item {
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.revenue-item.success {
+    background: rgba(52, 195, 143, 0.1);
+}
+
+.revenue-item.danger {
+    background: rgba(244, 106, 106, 0.1);
+}
+
+.revenue-item.light {
+    background: #f8f9fa;
+}
+
+.revenue-label {
+    color: #6c757d;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.revenue-value {
+    font-size: 24px;
+    font-weight: 600;
+    color: #2b2b2b;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.revenue-change {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+
+.revenue-change.positive {
+    color: #34c38f;
+}
+
+.revenue-change.negative {
+    color: #f46a6a;
+}
+
+.revenue-change i {
+    margin-right: 5px;
+}
+
+.revenue-margin {
+    text-align: right;
+    color: #6c757d;
+    font-size: 14px;
+}
+
+/* Demografia dos Clientes */
+.demographics {
+    padding: 20px;
+}
+
+.demographics-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.demographics-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.demographics-icon {
+    width: 32px;
+    height: 32px;
+    background: rgba(85, 110, 230, 0.1);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #556ee6;
+}
+
+.demographics-text {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2b2b2b;
+}
+
+.demographics-total {
+    color: #6c757d;
+    font-size: 14px;
+}
+
+.demographics-average {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.demographics-number {
+    width: 80px;
+    height: 80px;
+    background: #556ee6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 0 auto 15px;
+}
+
+.demographics-label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #2b2b2b;
+    margin-bottom: 5px;
+}
+
+.demographics-sublabel {
+    color: #6c757d;
+    font-size: 13px;
+}
+
+.age-groups {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.age-group {
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.age-group.blue {
+    background: rgba(85, 110, 230, 0.1);
+}
+
+.age-group.light-blue {
+    background: rgba(80, 165, 241, 0.1);
+}
+
+.age-group.purple {
+    background: rgba(111, 66, 193, 0.1);
+}
+
+.age-number {
+    font-size: 24px;
+    font-weight: 600;
+    color: #556ee6;
+    margin-bottom: 5px;
+}
+
+.age-percentage {
+    font-size: 18px;
+    font-weight: 500;
+    color: #2b2b2b;
+    margin-bottom: 5px;
+}
+
+.age-range {
+    color: #6c757d;
+    font-size: 13px;
+}
+
+.demographics-insight {
+    background: rgba(85, 110, 230, 0.1);
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.demographics-insight-icon {
+    width: 32px;
+    height: 32px;
+    background: #556ee6;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.demographics-insight-text {
+    flex: 1;
+}
+
+.demographics-insight-title {
+    font-weight: 500;
+    color: #2b2b2b;
+    margin-bottom: 2px;
+}
+
+.demographics-insight-subtitle {
+    color: #6c757d;
+    font-size: 13px;
+}
+
+.bairros-atendidos {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.bairros-atendidos .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.bairros-atendidos .header .icon {
+    background: #f14e4e;
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bairros-atendidos .header .icon i {
+    color: #fff;
+    font-size: 24px;
+}
+
+.bairros-atendidos .header .title {
+    flex: 1;
+    margin-left: 15px;
+}
+
+.bairros-atendidos .header .title h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.bairros-atendidos .header .title p {
+    font-size: 14px;
+    color: #6c757d;
+    margin: 0;
+}
+
+.bairros-atendidos .header .total {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+}
+
+.bairros-atendidos .header .total-label {
+    font-size: 12px;
+    color: #6c757d;
+}
+
+.bairros-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.bairro-item {
+    text-align: center;
+}
+
+.bairro-item .bairro-icon {
+    background: #f14e4e;
+    width: 56px;
+    height: 56px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+}
+
+.bairro-item .bairro-icon i {
+    color: #fff;
+    font-size: 24px;
+}
+
+.bairro-item .bairro-nome {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.bairro-item .bairro-valor {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.bairro-item .bairro-percentual {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.bairro-item .progress {
+    height: 4px;
+    margin-top: 10px;
+}
+
+.bairro-item .progress-bar {
+    background-color: #f14e4e;
+}
+
+.cobertura-info {
+    background: #fff1f1;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.cobertura-info .icon {
+    background: #f14e4e;
+    width: 42px;
+    height: 42px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.cobertura-info .icon i {
+    color: #fff;
+    font-size: 20px;
+}
+
+.cobertura-info .content {
+    flex: 1;
+}
+
+.cobertura-info .content h3 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.cobertura-info .content h3 span {
+    color: #f14e4e;
+}
+
+.cobertura-info .content p {
+    font-size: 14px;
+    color: #6c757d;
+    margin: 0;
+}
+
+.cobertura-info .status {
+    display: flex;
+    align-items: center;
+}
+
+.cobertura-info .status .dot {
+    width: 8px;
+    height: 8px;
+    background: #28a745;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.cobertura-info .status span {
+    font-size: 14px;
+    color: #28a745;
+}
+
+.tempo-medio-container {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.tempo-medio-container .tempo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.tempo-medio-container .tempo-header h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.tempo-medio-container .tempo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.tempo-medio-container .tempo-card {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.tempo-medio-container .tempo-card .card-icon {
+    margin-bottom: 15px;
+}
+
+.tempo-medio-container .tempo-card .card-icon i {
+    font-size: 24px;
+    color: #556ee6;
+}
+
+.tempo-medio-container .tempo-card .card-boxes {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.tempo-medio-container .tempo-card .card-tipo {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.tempo-medio-container .tempo-card .card-tempo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #556ee6;
+    margin-bottom: 5px;
+}
+
+.tempo-medio-container .tempo-card .card-label {
+    font-size: 13px;
+    color: #6c757d;
+}
+
+.tempo-medio-container .tempo-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    border-top: 1px solid #e9ecef;
+}
+
+.tempo-medio-container .tempo-footer .footer-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.tempo-medio-container .tempo-footer .footer-title {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 5px;
+}
+
+.tempo-medio-container .tempo-footer .footer-value {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}

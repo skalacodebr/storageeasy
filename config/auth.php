@@ -62,7 +62,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'database',
-            'table'  => 'usuarios',
+            'table'  => 'users',
         ],
 
         // 'users' => [

@@ -1,0 +1,9 @@
+.page-title h4 {
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.page-title p {
+    margin-bottom: 0;
+    color: #6c757d;
+}

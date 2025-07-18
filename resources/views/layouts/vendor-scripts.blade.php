@@ -11,7 +11,7 @@
 <script src="{{ asset('assets/libs/flatpickr/flatpickr.min.js') }}"></script>
 <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/pt.js"></script>
 <script src="{{ asset('assets/libs/pace-js/pace.min.js') }}"></script>
-<script src="{{ asset('assets/js/app.js') }}"></script>
+<!-- <script src="{{ asset('assets/js/app.js') }}"></script> -->
 
 <script>
 // Atualizar automaticamente o ano no copyright

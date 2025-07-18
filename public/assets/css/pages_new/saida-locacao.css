@@ -1,0 +1,563 @@
+.page-title h4 {
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.page-title p {
+    margin-bottom: 0;
+    color: #6c757d;
+}
+
+.nav-tabs {
+    border: none;
+    background-color: #f1f3f5;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+.nav-tabs .nav-link {
+    border: none;
+    color: #495057;
+    padding: 8px 16px;
+    border-radius: 6px;
+}
+
+.nav-tabs .nav-link.active {
+    background: #fff;
+    color: #000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.btn-novo-lead {
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 6px;
+}
+
+.metric-card {
+    border-radius: 12px;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    box-shadow: none;
+    border: 1px solid transparent;
+}
+
+.metric-card span {
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 0.25rem;
+    display: inline-block;
+}
+
+.metric-card h5 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.metric-card small {
+    font-size: 0.85rem;
+    color: #6c757d;
+}
+
+/* Cores de fundo + bordas mais vibrantes */
+.metric-blue {
+    background-color: #e3f2fd;
+    border: 1px solid #90caf9 !important;
+}
+
+.metric-green {
+    background-color: #e6ffe6;
+    border: 1px solid #66bb6a !important;
+}
+
+.metric-purple {
+    background-color: #f3e8ff;
+    border: 1px solid #ba68c8 !important;
+}
+
+.metric-green-light {
+    background-color: #e6fff5;
+    border: 1px solid #26a69a !important;
+}
+
+.metric-red {
+    background-color: #ffe6e6;
+    border: 1px solid #ef5350 !important;
+}
+
+.metric-yellow {
+    background-color: #fff9db;
+    border: 1px solid #ffb300 !important;
+}
+
+/* Cor roxa personalizada */
+.text-purple {
+    color: #7e57c2;
+}
+
+.table-card-custom {
+    border-radius: 16px;
+}
+
+.lead-table-custom thead th {
+    color: #8893a8 !important;
+    font-size: 15px;
+    font-weight: 600;
+    background: #f7f8fa !important;
+    border: none;
+}
+
+.lead-table-custom tbody tr {
+    border-bottom: 1px solid #f3f4f6;
+    transition: background 0.2s;
+}
+
+.lead-table-custom tbody tr:hover {
+    background: #f6f8fa;
+}
+
+.chip-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 16px;
+    padding: 3px 14px;
+    border: 1px solid transparent;
+}
+
+.chip-status-yellow {
+    background: #fff9e4;
+    color: #a78b18;
+    border-color: #fbe49c;
+}
+
+.chip-status-blue {
+    background: #f1f7ff;
+    color: #3565ae;
+    border-color: #b5d2fb;
+}
+
+.chip-status-green {
+    background: #e7faef;
+    color: #20904c;
+    border-color: #b6eccb;
+}
+
+.chip-status-red {
+    background: #ffeaea;
+    color: #d13535;
+    border-color: #ffc6c6;
+}
+
+.avatar-soft-blue {
+    background: #eaf1ff;
+    color: #6283bf;
+    font-weight: 600;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.star-gold {
+    color: #FFD600;
+    font-size: 1.1em;
+}
+
+.chip-origin {
+    display: inline-block;
+    font-size: 13px;
+    padding: 3px 15px;
+    font-weight: 500;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    background: #f7f7fa;
+}
+
+.chip-origin-purple {
+    background: #f8f1ff;
+    color: #ad72e2;
+    border-color: #e6d4fc;
+}
+
+.chip-origin-green {
+    background: #e9faec;
+    color: #28b363;
+    border-color: #b1ebc5;
+}
+
+.chip-origin-yellow {
+    background: #fffbe6;
+    color: #e1a600;
+    border-color: #fae6a2;
+}
+
+.chip-origin-blue {
+    background: #e9f3fe;
+    color: #4684c1;
+    border-color: #bfe0fd;
+}
+
+.contact-info {
+    font-size: 14px;
+    color: #626b7c;
+}
+
+.table-action {
+    font-size: 20px;
+    color: #8997b1;
+    cursor: pointer;
+}
+
+.pagination .page-item.active .page-link {
+    background: #172655;
+    border-color: #172655;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 8px !important;
+}
+
+.pagination {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    gap: 10px;
+}
+
+.pagination .page-link {
+    color: #172655;
+    min-width: 32px;
+    text-align: center;
+    border-radius: 8px !important;
+}
+
+.pagination .page-item.active .page-link {
+    background: #172655;
+    border-color: #172655;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 8px !important;
+}
+
+/* Dropdown menu customizado */
+.action-dropdown-custom {
+    border-radius: 10px !important;
+    min-width: 180px;
+    padding: 8px 0;
+    font-size: 15px;
+    box-shadow: 0 4px 32px 0 rgba(40, 41, 61, .08), 0 2px 4px 0 rgba(96, 97, 112, .16) !important;
+    border: 1px solid #f0f0f4;
+}
+
+.action-dropdown-custom .dropdown-item {
+    padding: 9px 18px;
+    color: #212529;
+    transition: background 0.2s, color 0.2s;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.action-dropdown-custom .dropdown-item i {
+    font-size: 19px;
+    color: #303f60;
+    opacity: 0.8;
+    transition: color 0.2s;
+}
+
+.action-dropdown-custom .dropdown-item.text-danger,
+.action-dropdown-custom .dropdown-item.text-danger i {
+    color: #eb5757 !important;
+    font-weight: 500;
+}
+
+.action-dropdown-custom .dropdown-item:hover {
+    background: #f6f8fb;
+    color: #2d3765;
+}
+
+.action-dropdown-custom .dropdown-item:hover i {
+    color: #2d3765;
+}
+
+.btn-link:hover {
+    color: #166abe;
+    text-decoration: none;
+}
+
+.table-responsive {
+    overflow-x: inherit;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Stepper de Saída de Locações */
+.locacao-stepper {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.locacao-stepper li {
+    display: flex;
+    align-items: center;
+    font-size: 0.95rem;
+    color: #94a3b8;
+    position: relative;
+}
+
+.locacao-stepper li+li {
+    margin-left: 22px;
+    margin-right: 10px;
+}
+
+.locacao-stepper li+li::before {
+    content: "";
+    position: absolute;
+    left: -1.5rem;
+    top: 50%;
+    width: 1.2rem;
+    height: 2px;
+    background: #94a3b8;
+    transform: translateY(-50%);
+}
+
+.locacao-stepper li.active+li::before {
+    content: "";
+    position: absolute;
+    left: -1.5rem;
+    top: 50%;
+    width: 1.2rem;
+    height: 2px;
+    background: #22c55e;
+    transform: translateY(-50%);
+}
+
+.locacao-stepper li i {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+    color: inherit;
+}
+
+.locacao-stepper li.active {
+    color: #22c55e;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+.locacao-stepper li.active i {
+    color: #22c55e;
+}
+
+
+
+
+
+
+
+.navegacao-passo-saida .btn-step-anterior {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    color: #64748b;
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 10px;
+    transition: background .2s, color .2s;
+}
+
+.navegacao-passo-saida .btn-step-anterior:hover {
+    background: #f1f5f9;
+    color: #0f172a;
+}
+
+.navegacao-passo-saida .btn-step-proximo {
+    background: #0057f8;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 10px;
+    transition: background .2s;
+}
+
+.navegacao-passo-saida .btn-step-proximo:hover {
+    background: #5891ef;
+    color: #fff;
+}
+
+
+/* Cards do Resumo Financeiro */
+.resfin-card {
+    box-shadow: 0 1px 4px 0 rgba(50, 50, 93, 0.06);
+    border: none;
+    transition: box-shadow .2s;
+}
+
+.resfin-card:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.resfin-green {
+    background: #f3fcf6;
+}
+
+.resfin-red {
+    background: #fff6f6;
+}
+
+.resfin-blue {
+    background: #f3f7fc;
+}
+
+.resfin-purple {
+    background: #f7f3fc;
+}
+
+.resfin-final {
+    background: #f7f7f9;
+}
+
+.resfin-card .fw-bold {
+    letter-spacing: -0.5px;
+}
+
+.resfin-card span.bg-success,
+.resfin-card span.bg-danger,
+.resfin-card span.bg-primary,
+.resfin-card span.bg-purple,
+.resfin-card span.bg-secondary {
+    min-width: 36px;
+    min-height: 36px;
+}
+
+.resfin-card .bg-purple {
+    background: #f3ebfc !important;
+}
+
+/* Alerta Pagamento Pendente */
+.resfin-alert {
+    border: 1px solid #ffe3a1;
+    background: #fffbe8 !important;
+    box-shadow: 0 1px 4px 0 rgba(240, 200, 90, 0.08);
+    font-size: 1.02rem;
+}
+
+.resfin-alert i {
+    color: #e7a92e !important;
+}
+
+.resfin-alert .btn-warning {
+    background: #ffe3a1;
+    color: #936c00;
+    border: none;
+    box-shadow: none;
+    transition: background .2s;
+}
+
+.resfin-alert .btn-warning:hover {
+    background: #ffd869;
+    color: #6b4c00;
+}
+
+/* Tabela do histórico */
+.resfin-table thead th {
+    font-weight: 600;
+    color: #55617a;
+    font-size: .96rem;
+}
+
+.resfin-table td,
+.resfin-table th {
+    vertical-align: middle;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    border: none;
+}
+
+.resfin-table .badge {
+    font-size: .93rem;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: .02em;
+}
+
+/* Card Containers */
+.res-financeiro-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px 0 rgba(45, 65, 120, 0.05);
+}
+
+/* Responsivo */
+@media (max-width: 991px) {
+    .res-financeiro-card {
+        margin-bottom: 18px !important;
+    }
+}
+
+/* Card superior de Saída Pronta */
+.saida-finalizada-card {
+    background: linear-gradient(180deg, #f3fcf6 80%, #fff 100%);
+    border: 2px solid #3dc86a;
+    border-radius: 14px;
+    padding: 2rem 2.5rem 1.5rem 2.5rem;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 2px 10px 0 rgba(80, 180, 100, 0.04);
+}
+
+.saida-finalizada-card .fs-4 {
+    font-weight: 700;
+}
+
+/* Card das confirmações finais */
+.confirmacoes-finais-card {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 2px 10px 0 rgba(60, 70, 120, 0.05);
+    padding: 1.2rem 2rem 1.7rem 2rem;
+}
+
+/* Checkbox item */
+.confirmacao-item {
+    background: #fafbfc;
+    border: 1.7px dashed #e2e5ea;
+    border-radius: 12px;
+    transition: border-color .2s, background .2s;
+}
+
+.confirmacao-item:hover {
+    border-color: #6dc48c;
+    background: #f3fcf6;
+}
+
+/* Checkbox styling */
+.confirmacao-item .form-check-input {
+    width: 1.25em;
+    height: 1.25em;
+    border-radius: 6px;
+    border: 2px solid #cfd8dc;
+    margin-top: 0.25em;
+    transition: border-color .2s;
+}
+
+.confirmacao-item .form-check-input:checked {
+    background-color: #3dc86a;
+    border-color: #3dc86a;
+}
+
+@media (max-width: 991px) {
+
+    .saida-finalizada-card,
+    .confirmacoes-finais-card {
+        padding: 1.2rem 1rem 1.2rem 1rem;
+    }
+}

@@ -8,18 +8,23 @@ use Illuminate\Notifications\Notifiable;
 class User extends Authenticatable
 {
     use Notifiable;
-    
-    public $timestamps = false;
-    
-    protected $table = 'usuarios';
-    
+
+    // Ativa created_at e updated_at automaticamente
+    public $timestamps = true;
+
+    // Aponta para a tabela correta
+    protected $table = 'users';
+
+    // Campos que podem ser preenchidos em massa
     protected $fillable = [
-        'nome',
+        'nome_completo',
         'email',
-        'senha',
+        'telefone',
+        'password',               // passe a usar "password"
+        
+        // se esses campos existirem mesmo na sua tabela, mantenha-os:
         'sou_loja',
         'cpf',
-        'telefone',
         'leu_termos',
         'quer_cupons',
         'endereco',
@@ -29,14 +34,16 @@ class User extends Authenticatable
         'admin',
         'total_lojas',
         'status',
-        'quantidade_lojas_permitidas'
+        'quantidade_lojas_permitidas',
     ];
 
+    // Campos ocultos nas serializações (JSON, arrays etc)
     protected $hidden = [
-        'senha',
+        'password',
         'remember_token',
     ];
 
+    // Casts para datas, booleans etc
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];

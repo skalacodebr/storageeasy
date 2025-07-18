@@ -1,0 +1,356 @@
+/* Container e Tipografia */
+.mapa-unidades {
+    padding: 2rem;
+    font-family: system-ui, sans-serif;
+    color: #111827;
+  }
+  .mapa-unidades h1 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+  .mapa-unidades .subtitulo {
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Filtros */
+  .filtros {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .filtros select {
+    padding: 0.5rem 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.375rem;
+    background: #ffffff;
+    min-width: 200px;
+    cursor: pointer;
+  }
+  
+  /* Legenda de Status */
+  .legenda-status {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .legenda-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    min-width: 160px;
+  }
+  .legenda-cor {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 0.25rem;
+  }
+  
+  /* Cores da Legenda */
+  .legenda-item.disponivel {
+    background: #dcfce7;
+    border: 1px solid #86efac;
+    color: #047857;
+  }
+  .legenda-item.disponivel .legenda-cor {
+    background: #86efac;
+    border: 1px solid #16a34a;
+  }
+  
+  .legenda-item.indisponivel {
+    background: #f3f4f6;
+    border: 1px solid #d1d5db;
+    color: #111827;
+  }
+  .legenda-item.indisponivel .legenda-cor {
+    background: #d1d5db;
+    border: 1px solid #6b7280;
+  }
+  
+  .legenda-item.locado {
+    background: #fee2e2;
+    border: 1px solid #fca5a5;
+    color: #b91c1c;
+  }
+  .legenda-item.locado .legenda-cor {
+    background: #fca5a5;
+    border: 1px solid #b91c1c;
+  }
+  
+  .legenda-item.manutencao {
+    background: #fef9c3;
+    border: 1px solid #fef08a;
+    color: #ca8a04;
+  }
+  .legenda-item.manutencao .legenda-cor {
+    background: #fef08a;
+    border: 1px solid #ca8a04;
+  }
+  
+  .legenda-item.uso-pessoal {
+    background: #ffedd5;
+    border: 1px solid #fed7aa;
+    color: #c2410c;
+  }
+  .legenda-item.uso-pessoal .legenda-cor {
+    background: #fed7aa;
+    border: 1px solid #c2410c;
+  }
+  
+  /* Grid de Unidades */
+  .grid-unidades {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  
+  /* Cartões de Unidade */
+  .card-unidade {
+    padding: 1rem;
+    border: 1px solid;
+    border-radius: 0.5rem;
+    text-align: center;
+  }
+  .card-unidade .numero {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+  }
+  .card-unidade .area {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  .card-unidade .dimensoes {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 0.5rem;
+  }
+  .card-unidade .volume {
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  
+  /* Cores dos Cartões */
+  .card-unidade.disponivel {
+    background: #dcfce7;
+    border-color: #86efac;
+    color: #047857;
+  }
+  .card-unidade.disponivel .numero {
+    color: #047857;
+  }
+  
+  .card-unidade.indisponivel {
+    background: #f3f4f6;
+    border-color: #d1d5db;
+    color: #111827;
+  }
+  .card-unidade.indisponivel .numero {
+    color: #111827;
+  }
+  
+  .card-unidade.locado {
+    background: #fee2e2;
+    border-color: #fca5a5;
+    color: #b91c1c;
+  }
+  .card-unidade.locado .numero {
+    color: #b91c1c;
+  }
+  
+  .card-unidade.manutencao {
+    background: #fef9c3;
+    border-color: #fef08a;
+    color: #ca8a04;
+  }
+  .card-unidade.manutencao .numero {
+    color: #ca8a04;
+  }
+  
+  .card-unidade.uso-pessoal {
+    background: #ffedd5;
+    border-color: #fed7aa;
+    color: #c2410c;
+  }
+  .card-unidade.uso-pessoal .numero {
+    color: #c2410c;
+  }
+  
+  /* ========= Container geral ========= */
+#detalhe-unidade {
+    border: 1px solid #BFDBFE;    /* azul-300 */
+    border-radius: 0.5rem;        /* rounded-lg */
+    overflow: hidden;
+    background: #ffffff;
+  }
+  
+  /* ========= Header (Unidade X e X fechar) ========= */
+  #detalhe-unidade .detail-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #EFF6FF;          /* azul-100 */
+    border-bottom: 1px solid #BFDBFE;
+    padding: 0.75rem 1.25rem;
+    font-weight: 600;
+    color: #1E3A8A;               /* azul-800 */
+  }
+  #detalhe-unidade .detail-header .btn-close {
+    font-size: 1.25rem;
+    line-height: 1;
+    color: #475569;               /* cinza-700 */
+  }
+  
+  /* ========= Tabs ========= */
+  #detalhe-unidade .detail-tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: #EFF6FF;
+    border-bottom: 1px solid #E5E7EB; /* cinza-200 */
+  }
+  #detalhe-unidade .detail-tabs > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+  #detalhe-unidade .detail-tabs .tab-box {
+    justify-content: flex-start;
+    padding: 0.375rem 1rem;
+    background: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    font-size: 0.875rem;
+    color: #111827;               /* cinza-900 */
+  }
+  #detalhe-unidade .detail-tabs .tab-box.active {
+    font-weight: 500;
+  }
+  #detalhe-unidade .detail-tabs .tab-link {
+    cursor: pointer;
+    font-size: 0.875rem;
+    color: #475569;               /* cinza-700 */
+  }
+  #detalhe-unidade .detail-tabs .tab-link.active {
+    color: #1E3A8A;               /* azul-800 */
+  }
+  #detalhe-unidade .detail-tabs .badge {
+    background: #3B82F6;          /* azul-500 */
+    color: #FFFFFF;
+    font-size: 0.75rem;
+    margin-left: 0.25rem;
+    padding: 0 0.4em;
+    border-radius: 9999px;
+  }
+  
+  /* ========= Body (conteúdo das tabs) ========= */
+  #detalhe-unidade .detail-body {
+    padding: 1rem 1.25rem;
+    background: #FFFFFF;
+  }
+  
+  /* detalhes gerais (Número, Área, Status) */
+  #detalhe-unidade .detail-body .row-detalhe {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  #detalhe-unidade .detail-body .row-detalhe > div {
+    flex: 1;
+  }
+  #detalhe-unidade .detail-body .row-detalhe strong {
+    display: block;
+    margin-bottom: 0.25rem;
+    color: #374151;               /* cinza-700 */
+  }
+  
+  /* badge de status inline */
+  .status-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.875rem;
+    border-radius: 9999px;
+  }
+  .status-disponivel   { background:#DCFCE7; color:#047857; }
+  .status-locado       { background:#FEE2E2; color:#B91C1C; }
+  .status-indisponivel { background:#F3F4F6; color:#374151; }
+  .status-manutencao   { background:#FEF9C3; color:#A16207; }
+  .status-uso          { background:#FFEDD5; color:#9A3412; }
+  
+  /* card interno de dimensões */
+  #detalhe-unidade .detail-body .card-dims {
+    border: 1px solid #E5E7EB;
+    border-radius: 0.375rem;
+    padding: 1rem;
+    background: #FFFFFF;
+  }
+  #detalhe-unidade .detail-body .card-dims h6 {
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+    color: #374151;
+  }
+  #detalhe-unidade .detail-body .card-dims .row-dims {
+    display: flex;
+    gap: 1rem;
+  }
+  #detalhe-unidade .detail-body .card-dims .row-dims > div {
+    flex: 1;
+  }
+  #detalhe-unidade .detail-body .card-dims strong {
+    display: block;
+    margin-bottom: 0.25rem;
+    color: #374151;
+  }
+
+  /* container das tabs */
+#detalhe-unidade .detail-tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background: #EFF6FF;              /* azul-100 */
+    border-bottom: 1px solid #E5E7EB; /* cinza-200 */
+  }
+  
+  /* todas as abas */
+  #detalhe-unidade .detail-tabs .tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    color: #475569;                   /* cinza-700 */
+    cursor: pointer;
+    position: relative;
+  }
+  
+  /* primeira aba alinha à esquerda como no design */
+  #detalhe-unidade .detail-tabs .tab[data-tab="box"] {
+    justify-content: flex-start;
+  }
+  
+  /* estilo da aba ativa */
+  #detalhe-unidade .detail-tabs .tab.active {
+    background: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 0.375rem;
+    color: #111827;                   /* cinza-900 */
+  }
+  
+  /* indicador de badge */
+  #detalhe-unidade .detail-tabs .tab .badge {
+    background: #3B82F6;              /* azul-500 */
+    color: #FFFFFF;
+    font-size: 0.75rem;
+    margin-left: 0.25rem;
+    padding: 0 0.4em;
+    border-radius: 9999px;
+  }
+  
+  .table-responsive {
+    overflow-x: inherit;
+    -webkit-overflow-scrolling: touch;
+}

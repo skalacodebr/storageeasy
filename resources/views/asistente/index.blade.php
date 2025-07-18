@@ -1,7 +1,7 @@
 @include('layouts/head-main')
 
 <head>
-    <title>Assistente JLC</title>
+    <title>Assistente | Storage Easy</title>
 
     @include('layouts/head')
     @include('layouts/head-style')
